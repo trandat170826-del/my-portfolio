@@ -1,49 +1,138 @@
 
-
 <!DOCTYPE html>
-
 <html lang="vi">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Giới thiệu</title>
-
+    <meta name="description" content="Các dự án cá nhân của Trần Gia Đạt.">
+    <title>Dự án | Trần Gia Đạt</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
 
-    <nav>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">GiaDat<span>.</span></a>
 
-        <a href="index.html">Trang chủ</a>
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Mở menu" aria-expanded="false">☰</button>
 
-        <a href="about.html">Giới thiệu</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#about">Giới thiệu</a></li>
+                <li><a href="index.html#skills">Kỹ năng</a></li>
+                <li><a href="projects.html" class="active">Dự án</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
 
-        <a href="contact.html">Liên hệ</a>
-
-    </nav>
-
-    <header>
-
-        <h1>Giới thiệu về mình</h1>
-
-        <p>Mình đang học lập trình Web.</p>
-
+            <button class="theme-toggle" id="themeToggle"
+                    aria-label="Chuyển chế độ giao diện">🌙</button>
+        </nav>
     </header>
 
-    <section>
+    <main>
+        <section class="page-heading container" data-reveal>
+            <p class="section-label">NHỮNG SẢN PHẨM CỦA TÔI</p>
+            <h1>Dự án cá nhân</h1>
+            <p>
+                Tổng hợp những bài tập và sản phẩm tôi đã thực hiện
+                trong quá trình học tập và rèn luyện kỹ năng.
+            </p>
+        </section>
 
-        <h2>Thông tin cá nhân</h2>
+        <section class="section container">
+            <div class="project-grid project-grid-large">
 
-        <p>Mình yêu thích công nghệ và thiết kế website.</p>
+                <article class="project-card" data-reveal>
+                    <img src="images/project1.jpg" alt="Website cá nhân">
+                    <div class="project-info">
+                        <span class="tag">HTML / CSS</span>
+                        <h3>Website cá nhân</h3>
+                        <p>
+                            Xây dựng website giới thiệu bản thân,
+                            thông tin cá nhân và các kỹ năng.
+                        </p>
+                    </div>
+                </article>
 
-    </section>
+                <article class="project-card" data-reveal>
+                    <img src="images/project2.jpg" alt="Website Album ảnh">
+                    <div class="project-info">
+                        <span class="tag">Bootstrap</span>
+                        <h3>Website Album ảnh</h3>
+                        <p>
+                            Tạo bộ sưu tập hình ảnh với giao diện
+                            trực quan và chức năng xem ảnh lớn.
+                        </p>
+                    </div>
+                </article>
 
+                <article class="project-card" data-reveal>
+                    <img src="images/project3.jpg" alt="Game phản xạ">
+                    <div class="project-info">
+                        <span class="tag">JavaScript</span>
+                        <h3>Game kiểm tra phản xạ</h3>
+                        <p>
+                            Trò chơi tương tác giúp kiểm tra tốc độ
+                            phản xạ thông qua thao tác click chuột.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <img src="images/project4.jpg" alt="Website đăng ký">
+                    <div class="project-info">
+                        <span class="tag">HTML / CSS</span>
+                        <h3>Form đăng ký</h3>
+                        <p>
+                            Thiết kế biểu mẫu đăng ký với các trường
+                            nhập liệu và kiểm tra thông tin cơ bản.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <img src="images/project5.jpg" alt="Quản lý sinh viên">
+                    <div class="project-info">
+                        <span class="tag">Java</span>
+                        <h3>Quản lý sinh viên</h3>
+                        <p>
+                            Chương trình thực hành quản lý thông tin
+                            và xử lý dữ liệu sinh viên.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-reveal>
+                    <img src="images/project6.jpg" alt="Portfolio cá nhân">
+                    <div class="project-info">
+                        <span class="tag">HTML / CSS / JS</span>
+                        <h3>Portfolio chuyên nghiệp</h3>
+                        <p>
+                            Website giới thiệu bản thân tích hợp
+                            Responsive, Dark Mode và hiệu ứng cuộn trang.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="contact-banner container" data-reveal>
+            <div>
+                <h2>Bạn muốn trao đổi về dự án?</h2>
+                <p>Hãy gửi cho tôi một lời nhắn nhé!</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Liên hệ</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Trần Gia Đạt. Được xây dựng bằng HTML, CSS và JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
