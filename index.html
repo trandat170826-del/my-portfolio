@@ -1,55 +1,242 @@
 
-
 <!DOCTYPE html>
-
 <html lang="vi">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio của tôi</title>
-
+    <meta name="description" content="Portfolio cá nhân của Trần Gia Đạt - Sinh viên Công nghệ thông tin.">
+    <title>Trần Gia Đạt | Portfolio cá nhân</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
 
-    <nav>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">GiaDat<span>.</span></a>
 
-        <a href="index.html">Trang chủ</a>
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Mở menu" aria-expanded="false">
+                ☰
+            </button>
 
-        <a href="about.html">Giới thiệu</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="projects.html">Dự án</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
 
-        <a href="contact.html">Liên hệ</a>
-
-    </nav>
-
-    <header>
-
-        <h1>Xin chào! Mình là Nguyễn Văn A</h1>
-
-        <p>Full-stack Developer tương lai</p>
-
+            <button class="theme-toggle" id="themeToggle"
+                    aria-label="Chuyển chế độ giao diện">🌙</button>
+        </nav>
     </header>
 
-    <section>
+    <main>
 
-        <h2>Dự án nổi bật</h2>
+        <!-- PHẦN GIỚI THIỆU -->
+        <section class="hero container" data-reveal>
+            <div class="hero-content">
+                <p class="hello">XIN CHÀO, TÔI LÀ</p>
 
-        <div class="project">Todo List JS</div>
+                <h1>Trần Gia Đạt</h1>
 
-        <div class="project">Weather App</div>
+                <h2>Sinh viên Công nghệ thông tin</h2>
 
-        <div class="project">Portfolio của mình</div>
+                <p class="hero-description">
+                    Tôi là một sinh viên có niềm đam mê với công nghệ,
+                    thiết kế website và lập trình. Tôi luôn mong muốn
+                    học hỏi những kiến thức mới và phát triển bản thân
+                    thông qua các dự án thực tế.
+                </p>
 
-    </section>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        Xem dự án
+                    </a>
+
+                    <a href="contact.html" class="btn btn-outline">
+                        Liên hệ với tôi
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="avatar-frame">
+                    <img src="images/avatar.jpg"
+                         alt="Ảnh đại diện Trần Gia Đạt">
+                </div>
+                <div class="floating-card">
+                    <span>💻</span>
+                    <p>Đam mê công nghệ</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GIỚI THIỆU -->
+        <section class="section about-section" id="about">
+            <div class="container" data-reveal>
+                <div class="section-heading">
+                    <p class="section-label">VỀ BẢN THÂN</p>
+                    <h2>Giới thiệu về tôi</h2>
+                </div>
+
+                <div class="about-content">
+                    <div>
+                        <h3>Xin chào! Tôi là Gia Đạt.</h3>
+                        <p>
+                            Hiện tại, tôi đang là sinh viên ngành Công nghệ
+                            thông tin. Tôi yêu thích việc tìm hiểu cách
+                            công nghệ vận hành và cách xây dựng những
+                            sản phẩm hữu ích trên Internet.
+                        </p>
+                        <p>
+                            Trong quá trình học tập, tôi đã tiếp cận với
+                            nhiều kiến thức về lập trình, thiết kế website
+                            và cơ sở dữ liệu. Tôi luôn cố gắng vận dụng
+                            những kiến thức đã học vào các bài tập và
+                            dự án cá nhân.
+                        </p>
+                    </div>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Họ và tên</span>
+                            <strong>Trần Gia Đạt</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>Nghề nghiệp</span>
+                            <strong>Sinh viên</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>Lĩnh vực</span>
+                            <strong>Công nghệ thông tin</strong>
+                        </div>
+                        <div class="info-item">
+                            <span>Sở thích</span>
+                            <strong>Lập trình, công nghệ</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KỸ NĂNG -->
+        <section class="section" id="skills">
+            <div class="container" data-reveal>
+                <div class="section-heading">
+                    <p class="section-label">NĂNG LỰC CỦA TÔI</p>
+                    <h2>Kỹ năng</h2>
+                    <p>Những công nghệ và ngôn ngữ lập trình tôi đang học tập.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-icon">🌐</span>
+                        <h3>HTML</h3>
+                        <p>Xây dựng cấu trúc website.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">🎨</span>
+                        <h3>CSS</h3>
+                        <p>Thiết kế giao diện và bố cục.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">⚡</span>
+                        <h3>JavaScript</h3>
+                        <p>Tạo chức năng tương tác.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">☕</span>
+                        <h3>Java</h3>
+                        <p>Lập trình hướng đối tượng.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">💻</span>
+                        <h3>C++</h3>
+                        <p>Kiến thức lập trình cơ bản.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-icon">🗄️</span>
+                        <h3>Cơ sở dữ liệu</h3>
+                        <p>Làm quen với quản lý dữ liệu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DỰ ÁN NỔI BẬT -->
+        <section class="section featured-section">
+            <div class="container" data-reveal>
+                <div class="section-heading">
+                    <p class="section-label">SẢN PHẨM CỦA TÔI</p>
+                    <h2>Dự án nổi bật</h2>
+                </div>
+
+                <div class="project-grid">
+
+                    <article class="project-card">
+                        <img src="images/project1.jpg" alt="Website cá nhân">
+                        <div class="project-info">
+                            <h3>Website cá nhân</h3>
+                            <p>Thiết kế trang web giới thiệu bản thân bằng HTML và CSS.</p>
+                            <span class="tag">HTML / CSS</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/project2.jpg" alt="Album hình ảnh">
+                        <div class="project-info">
+                            <h3>Website Album ảnh</h3>
+                            <p>Trang web trưng bày hình ảnh với chức năng xem ảnh lớn.</p>
+                            <span class="tag">Bootstrap / JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="images/project3.jpg" alt="Game kiểm tra tốc độ">
+                        <div class="project-info">
+                            <h3>Game phản xạ</h3>
+                            <p>Trò chơi kiểm tra tốc độ phản xạ bằng thao tác chuột.</p>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="center-button">
+                    <a href="projects.html" class="btn btn-primary">
+                        Xem tất cả dự án →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LỜI MỜI LIÊN HỆ -->
+        <section class="contact-banner container" data-reveal>
+            <div>
+                <p class="section-label">KẾT NỐI VỚI TÔI</p>
+                <h2>Cùng trao đổi và chia sẻ ý tưởng!</h2>
+                <p>Tôi luôn sẵn sàng học hỏi và kết nối với mọi người.</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Gửi lời nhắn</a>
+        </section>
+
+    </main>
+
+    <!-- CHÂN TRANG -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Trần Gia Đạt. Được xây dựng bằng HTML, CSS và JavaScript.</p>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
-
 </body>
-
 </html>
